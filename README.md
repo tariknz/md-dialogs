@@ -7,9 +7,31 @@ Currently it supports:
 
 # Getting started
 
-1. Import the module `MdDialogsHelperModule` to your own module
+1. Install from npm `npm i md-dialogs -s`
+2. Import the module `MdDialogsHelperModule` to your own module
+
+```
+  import { MdDialogsHelperModule } from 'md-dialogs';
+
+  @NgModule({
+    declarations: [
+      ...
+    ],
+    imports: [
+      ...
+      MdDialogsHelperModule,
+    ]
+  })
+  export class AppModule { }
+
+```
+
 2. Inject the `MdDialogsHelperService` service
 3. Call it like the following:
+
+```
+  import { MdDialogsHelperService } from 'md-dialogs';
+```
 
 ```
   constructor(private dialogs: MdDialogsHelperService) {}
@@ -18,7 +40,10 @@ Currently it supports:
     this.dialogs
       .confirm('Confirm Dialog')
       .subscribe((result) => {
-        /* result will be true or false depening on user clicking OK or cancelling */
+        /*
+          result will be true or false
+          depending on user clicking OK or cancelling
+        */
       });
   }
 ```
