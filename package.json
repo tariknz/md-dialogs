@@ -1,6 +1,6 @@
 {
   "name": "md-dialogs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": {
     "url": "https://github.com/tariknz/md-dialogs"
   },
@@ -15,7 +15,14 @@
     "packagr": "ng-packagr -p ng-package.json"
   },
   "private": false,
-  "dependencies": {
+  "peerDependencies": {
+    "@angular/material": "^5.0.3",
+    "@angular/cdk": "^5.0.3",
+    "@angular/core": "^5.0.0",
+    "@angular/common": "^5.0.0",
+    "rxjs": "^5.5.2"
+  },
+  "devDependencies": {
     "@angular/animations": "^5.0.0",
     "@angular/cdk": "^5.0.3",
     "@angular/common": "^5.0.0",
@@ -30,9 +37,7 @@
     "core-js": "^2.4.1",
     "ng-packagr": "^1.6.0",
     "rxjs": "^5.5.2",
-    "zone.js": "^0.8.14"
-  },
-  "devDependencies": {
+    "zone.js": "^0.8.14",
     "@angular/cli": "1.6.1",
     "@angular/compiler-cli": "^5.0.0",
     "@angular/language-service": "^5.0.0",
