@@ -1,11 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
 import { MdDialogsHelperService } from './md-dialogs-helper.service';
+import { MatDialogModule } from '@angular/material';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
 describe('MdDialogsServiceService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [MdDialogsHelperService]
+      imports: [MatDialogModule],
+      providers: [MdDialogsHelperService],
+      declarations: [ConfirmDialogComponent]
     });
   });
 
