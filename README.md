@@ -26,8 +26,8 @@ Currently it supports:
 
 ```
 
-2. Inject the `MdDialogsHelperService` service
-3. Call it like the following:
+3. Inject the `MdDialogsHelperService` service
+4. Call it like the following:
 
 ```
   import { MdDialogsHelperService } from 'md-dialogs';
