@@ -5,6 +5,8 @@ This is to simplify MatDialogs from @angular/material package but wrapping it in
 Currently it supports:
 * Confirm Dialog
 
+Try it out here: https://stackblitz.com/edit/md-dialogs-helper
+
 # Getting started
 
 1. Install from npm `npm i md-dialogs -s`
