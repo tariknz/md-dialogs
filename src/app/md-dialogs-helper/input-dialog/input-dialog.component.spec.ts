@@ -1,12 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { InputDialogComponent } from './input-dialog.component';
-import {
-  MatDialogRef,
-  MatInputModule,
-  MatFormFieldModule,
-  MatDialogModule
-} from '@angular/material';
+import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MockDialogRef } from '../confirm-dialog/confirm-dialog.component.spec';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
